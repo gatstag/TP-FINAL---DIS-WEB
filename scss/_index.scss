@@ -1,0 +1,133 @@
+/* index */
+
+.gridIndex{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+}
+.header{grid-area:header;}
+.main{grid-area:main;}
+.footer{grid-area:footer;}
+
+.gridMainIndex{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "container"
+    "seccionesIndex"
+    "suscribeIndex"
+}
+
+.div.container{grid-area: container;}
+.section.seccionesIndex{grid-area: seccionesIndex;}
+.div.suscribeIndex{grid-area: suscribeIndex;}
+
+
+.gridSections{
+    display:grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "card1 card2 card3"
+}
+
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+
+.flexCard{display:flex;
+            flex-direction: column; 
+            justify-content:center;
+            align-items:center;}
+.flexCard2{display:flex;flex-direction: column;
+            justify-content:center;
+            align-items:center;}
+.flexCard3{display:flex;flex-direction: column;
+            justify-content:space-evenly;
+            align-items:center;}
+.flexRow{display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            @media only screen and (max-width:768px){
+        flex-wrap: wrap;
+            }
+        }    
+.flextext{text-align: center;}
+.container{position: relative;
+            text-align: center;}
+.centered{position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+.redondeado{border-radius: 30px 30px 50px 0px;
+    @media only screen and (max-width:768px){
+        border-radius: 10px 10px 10px 10px;
+            }}
+.img-card{width:80%;
+            height:50%;}
+.seccionesIndex{background-color: grey;
+                width: 300px;
+                align-items: center;
+                border-radius: 2%;
+                transition: all 0.5s;
+                &:hover{    
+                padding: 10px;
+                    box-shadow: 5px 10px 8px rgb(25, 25, 25);
+}}
+.seccionesIndex h2{color:whitesmoke;}
+.seccionesIndex p{color:violet;}
+.suscribeIndex{background-color: grey;
+                width: 400px;
+                border-radius: 1.5%;}
+.suscribeIndex h2{color:whitesmoke;}
+.color {color:violet;}
+.flexFooter{display:flex; flex-direction: row; justify-content: space-around; align-items: center;}
+.centrarLogos{text-align: center;}
+.contactoFooter{color: rgb(115, 23, 115);}
+.contactoFooter{display:flex;flex-direction: column;align-items: center;}
+.noMargen{margin: 0px !important;}
+.bgm{ background-image: linear-gradient(to bottom, transparent, rgb(207, 142, 152), transparent)}
+.seccionesIndex{background-color: grey;width: 300px; align-items: center; border-radius: 2%;padding: 20px;margin: 10px;}
+
+/* MEDIA QUERIE MOBILE */
+
+@media only screen and (max-width:768px){
+
+.mainIndex div h1{color:violet;}
+.mainIndex div h3{color:white;}
+.mainIndex div h4{color:whitesmoke;}
+.achicar{width: 15%; }
+div .logo {display:flex;flex-direction: column; align-content: center; align-items: center;}
+nav ul li a {font-size: 13px;}
+li{padding:2px;margin:2px;}
+.largo{width: 55px;}
+main, footer, header{display:flex; flex-direction: column; align-items: center;}
+.desaparecer{display:none;}
+.gridServicios{display:flex;flex-direction: column;}
+h1{font-size: 16px;}
+p{font-size: 14px;}
+.img-fluid{width: 100%;height: auto;}
+.imgFluidMain{width: 100%;height: auto;}
+.centered{position: absolute; top: 50%; left: 50%; font-size: 8px;}
+
+.img-card{width:250px;
+    height:200px;}
+.seccionesIndex h3{color:whitesmoke; font-size: 20px; text-align: center;}
+.seccionesIndex p{color:violet;text-align: center;}
+
+.suscribeIndex{background-color: grey; border-radius: 1.5%;}
+.suscribeIndex h2{color:whitesmoke;}
+.cntr{text-align: center;}
+.footer{display:flex; flex-direction: row; justify-content: space-around; align-items: flex-start;align-content: space-around;}
+.flexFooter{display:flex; flex-direction: row; justify-content: space-evenly; align-items: center;}
+.achicar2{width: 100px;}
+
+.contacto{font-size: 10px;}
+.contacto p{font-size: 10px;}
+.rrss h3{font-size: 10px;}
+}

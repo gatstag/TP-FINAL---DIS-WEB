@@ -1,0 +1,92 @@
+/* 4.producto */
+.bg-p {background-color:whitesmoke;}
+.img1prod{width: 40%;height: 40%;}
+.flexboxsp{display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:center;
+            align-content: flex-end;
+        background-color: rgb(255, 208, 215);
+        &:hover{
+            background-color:rgb(207, 142, 152);
+            box-shadow: 5px 10px 8px rgb(25, 25, 25);
+            h5{
+            color: whitesmoke;
+            }
+        }
+    }
+.gridProducto{
+    display:grid;
+    grid-template-columns:70% 2% 23% 5%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "article1 n1 aside1 n2";
+}
+.prod01{grid-area: article1;}
+.np1{grid-area: n1;}
+.gridAsideProd{grid-area: aside1;}
+.np2{grid-area: n2;}
+
+.flexp{display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    }
+
+.tablaProducto{font-weight: 800; color: rgb(115, 23, 115);}
+.tablaProducto .tr01Producto{background-color: rgb(207, 142, 152);}
+td, th {border: solid 2px rgb(115, 23, 115);
+    &:hover{
+        background-color:rgb(255, 208, 215);
+}
+}
+
+.sombra{box-shadow: 5px 10px 8px rgb(25, 25, 25);} 
+.flexsidep{display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+      
+}
+
+.asideProducto{background-color: grey; border-radius: 2%; box-shadow: 5px 10px 8px rgb(25, 25, 25);}
+.asideProducto div h4{font-weight: 800; color: black; }
+.asideProducto section h5{font-weight: 800; color: rgb(115, 23, 115);}
+
+/* MEDIA QUERIE MOBILE */
+
+@media only screen and (max-width:768px){
+    .gridProducto{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "article1" 
+        "aside1";
+    }
+    .prod01{grid-area: article1;}
+    .gridAsideProd{grid-area: aside1;}
+
+    .achicar3{ max-width: 70%;
+                max-height: auto;}
+
+                p {text-align: justify;}
+
+.gridProducto{display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            align-content: center;}
+
+.gridAsideP01{margin: 1px;
+    img, p, table {margin: 1px;}}
+    section {margin: 5px; padding: 5px;}
+}
+.gridProd01{margin: 0;
+            article, img, p, table{margin: 30px;}
+            h1{padding: 30px;}
+    }
+
+.cen{text-align: center;}

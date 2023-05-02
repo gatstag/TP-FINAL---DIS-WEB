@@ -1,0 +1,87 @@
+/* 2.metodo */
+
+.gridMetodo{
+    display:grid;
+    grid-template-columns:15% 85%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "aside article";
+    @media only screen and (max-width:768px){
+        grid-template-columns:100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "article";
+    .achicarMet{width: 95%; padding-top: 20px;}
+}
+}
+.articleGrid{grid-area: article;}
+.asideGrid{grid-area: aside;}
+
+.grid2Art{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "tex tex"
+    "txt1 img" !important;
+}
+.th33m{grid-area: tex;}
+.t3m{grid-area: txt1;}
+.img2m{grid-area: img;}
+
+.fleximg1{display: flex;flex-direction: row;justify-content:center;align-items:center;align-content: center;}
+.fleximg2{display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+}
+.flexvid1{display: flex;flex-direction: row;justify-content:center;align-items:center;align-content: center;}
+.PBTmetodo h3{font-weight: 800; color:rgb(80, 31, 80)}
+.PBTmetodo p, h5 {color:rgb(115, 23, 115)}
+.tablaMetodo{background-color: rgb(208, 207, 207);}
+.tablaMetodo h4{font-weight: 300; color: rgb(80, 31, 80);}
+.tablaMetodo ul li a{font-weight: 100;}
+
+.t5m {margin-right: 15px; text-align: justify;}
+.t4m {margin-right: 15px; text-align: justify;}
+.t3m {margin-right: 15px; text-align: justify;}
+.t2m {margin-right: 15px; text-align: justify;}
+.t1m {margin-right: 15px; text-align: justify;}
+
+@media only screen and (max-width:768px){
+.PBTmetodo p{font-size: 12px;}
+.PBTmetodo h3{font-size: 14px;}
+.articleGrid{
+            padding-bottom: 15px !important;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: flex-start;}
+
+.gridMetodo{width: 100%;margin-left: 5px;}
+
+.achicarVidMet{max-width: 100%;
+            max-height: auto;}
+.th33m{margin-right: 15px;}
+
+.grid2Art{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "tex"
+    "txt1" 
+    "img" !important;
+}
+
+.th33m{grid-area: tex;}
+.t3m{grid-area: txt1;}
+.img2m{grid-area: img;}
+
+.grid2Art{padding: 0px;} 
+.p768 {padding: 1px !important;}
+
+}
